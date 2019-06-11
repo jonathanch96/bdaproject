@@ -1,0 +1,698 @@
+/*master*/
+.rotate{
+    -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+  -moz-transform: rotate(180deg);        /* FF */
+  -o-transform: rotate(180deg);          /* Opera */
+  -ms-transform: rotate(180deg);         /* IE9 */
+  transform: rotate(180deg);             /* W3C compliant browsers */
+
+  /* IE8 and below */
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=-1, M12=0, M21=0, M22=-1, DX=0, DY=0, SizingMethod='auto expand');
+}
+.button-bda{
+    padding: 10px 10px;background-color: #a8131d;color: white;border-radius: 5px;margin-right: -5px;font-size: 18px;
+}
+.button-bda:hover{
+    background-color: #811111;
+    cursor: pointer;
+}
+.errors{
+    color: #a8131d;
+}
+[class*='close-'] {
+  color: #777;
+  font: 14px/100% arial, sans-serif;
+  position: absolute;
+  right: 10px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  top: 10px;
+}
+
+.close-thik:after {
+
+  content: '✖'; /* UTF-8 symbol */
+
+}
+html {
+    position: relative;
+    min-height: 100%;
+
+}
+
+body {
+    margin: 0 0 250px; /* bottom = footer height */
+    
+}
+header{
+    width: 100%;
+    top:0;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 750px;
+    margin-bottom: 100px;
+    margin-top: 10px;
+    
+}
+
+footer {
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+    min-height: 300px;
+    width: 100%;
+    overflow:hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#get_latest_product{
+    position: absolute;
+    bottom: 400px;
+    width: 100%;
+    overflow:hidden;
+    left: 0;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 80px;
+  z-index: 99;
+  font-size: 22px;
+  border: none;
+  outline: none;
+  background-color: rgba(0,0,0,.2);
+  color: white;
+  cursor: pointer;
+  padding:0px 10px 0 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #a8131d;
+}
+
+
+/*message*/
+#contactUs{
+   position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 22px;
+  border: none;
+  outline: none;
+  background-color: rgba(0,0,0,.2);
+  color: white;
+  cursor: pointer;
+  padding:0px 10px 0 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px; 
+}
+#contactUs:hover{
+    background-color: #a8131d;
+}
+#messageForm{
+    display: none;
+    position: fixed;
+    right: 31px;
+    bottom: 60px;
+   z-index: 999;
+    padding: 25px 12px;
+    background-color: #e8e8e8;
+    -webkit-transform: scale(.95);
+    -ms-transform: scale(.95);
+    transform: scale(.95);
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    height: 300px;
+    font-size: 20px;
+
+}
+.form-msg{
+    width: 400px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.form-msg input{
+    width: 100%;
+}
+.form-msg textarea{
+    width: 100%;
+
+}
+/*end of message*/
+.footer-bottom {
+    position: absolute;
+    padding: 20px 0 20px;
+    border-top: 1px solid #666;
+    background: #696969;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.copyright-text p {
+    color: #ccc;
+    margin-top: 9px;
+    margin-bottom: 0;
+}
+
+.footer-detail{
+    font-size: 13px;
+}
+.footer-detail ul{
+    text-align:left;padding-left: 50%;
+}
+.footer-detail-in{
+    margin-top:2px;
+}
+
+#footer-container{
+    color:white;width: 75%;
+}
+.footer-detail a{
+    color: white;
+    text-decoration: none;
+}
+.footer-detail a:hover{
+    color: #888;
+    text-decoration: none;
+}
+.footer-detail a:visited{
+    color: white;
+    text-decoration: none;
+}
+.footer-detail a:link{
+    color: white;
+    text-decoration: none;
+}
+.footer-detail-in a:hover{
+    color: #a8131d;
+}
+#footer-site ul li:hover{
+    color: #a8131d;
+    cursor: pointer;
+}
+#footer-brands ul li:hover{
+    color: #a8131d;
+    cursor: pointer;
+}
+
+
+
+
+#index-container{
+    width: 65%;
+}
+#subscribe-holder{
+    float: right;
+}
+#myTopnav{
+    width: 72%;
+    margin: 0 auto 0 auto;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: black;
+    overflow: hidden;
+}
+.dropdown-index{
+    position: absolute;
+    text-align: left;
+    width: 135px;
+    margin-left: 119px;
+    margin-top: 46px;
+    font-size: 16px;
+    background-color: white;
+    z-index: 999;
+
+}
+.dropdown-admin{
+    position: absolute;
+    text-align: left;
+    width: 205px;
+    margin-left: 590px;
+    margin-top: 46px;
+    font-size: 16px;
+    background-color: white;
+    z-index: 999;
+}
+.dropdown-admin ul{
+    padding-left: 0px;
+
+}
+.dropdown-admin ul li{
+
+    padding: 10px 10px;
+}
+.dropdown-admin ul li:hover{
+    background-color: #a8131d;
+    color: white;
+    cursor: pointer;
+
+}
+.dropdown-index ul{
+    padding-left: 0px;
+}
+.dropdown-index ul li{
+
+    padding: 10px 10px;
+}
+.dropdown-index ul li:hover{
+    background-color: #a8131d;
+    color: white;
+    cursor: pointer;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 37px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #a8131d;
+    color: white;
+    text-decoration: none;
+}
+
+.topnav a:visited{
+    color: white;
+    text-decoration: none;
+}
+.topnav a:active{
+    color: white;
+    text-decoration: none;
+}
+.topnav a:link{
+    color: white;
+    text-decoration: none;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #a8131d;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+#search-button-index{
+    height: 31px;margin-left:-1px;margin-top:-1px;float: left;
+}
+#search-button-index:hover{
+    cursor: pointer;
+}
+#search-input-index{
+    width: 90%;height: 30px;float: left;
+}
+/*end of master*/
+/*index*/
+.container-custom{
+    width: 74%;
+    margin: 0 auto 0 auto;
+}
+#index-section{
+    min-height: 600px;margin-bottom: 600px;
+}
+/*slider product*/
+.product-carousel-item{
+    display: inline-block;
+    width: 1.333%;
+    margin-right: 0.365%;
+
+    overflow: hidden;
+    float: left;
+}
+.product-carousel-item .caption{
+    background-color: #000;
+    color: #fff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /*IE*/
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80) ;/*IE 5-7*/
+    -moz-opacity:0.8; /*old mozilla*/
+    -khtml-opacity:0.8; /*old safari*/
+    opacity :0.8;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+   
+
+}
+.product-carousel-item .caption h2{
+    margin: 10px;
+    font-size: 12px;
+    font-stretch: narrower;
+    font-weight: normal;
+    padding-top: 5px;
+    height: 6em;
+    overflow-y: scroll;
+}
+.product-carousel-item .caption a{
+    font-size: 11px;
+    color: #fff;
+    background-color: #0398CF;
+    text-decoration: none;
+    padding: 7px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius:5px;
+    -border-radius:5px;
+    margin:0 10px;
+}
+
+
+/*end of slider product*/
+/*end of index*/
+
+
+/*product page*/
+.product-tab{
+    display: inline-block; padding:10px 10px;
+    text-align: center;
+    width: 150px;
+}
+.product-tab:hover{
+    color: #a8131d;
+    cursor: pointer;
+    font-weight: bold;
+}
+.products-desc{
+    font-size: 13px;
+}
+.products:hover{
+    background-color: #a8131d;
+    cursor: pointer;
+    color: white;
+}
+.products-view-all{
+    float: right; margin-top: 10px;
+}
+.products-view-all:hover{
+    font-weight: bold;
+    cursor: pointer;
+    color: #a8131d;
+
+}
+/*end of product page*/
+ /*distributor*/
+    .distributors{
+        overflow: auto;margin-top: 40px;
+    }
+/*end of distributor*/
+/*all products*/
+.all-products:hover{
+    border: 1px solid #BBB;
+    cursor: pointer;
+
+
+}
+
+/*end of all products*/
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1024px) {
+    /*master*/
+
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .dropdown-index{
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: black;
+    color: white;
+    padding-left: 70px;
+    position: relative;
+  }
+  .dropdown-admin{
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: black;
+    color: white;
+    padding-left: 70px;
+    position: relative;
+  }
+    /*end of master*/
+
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1024px) {
+    /*master*/
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #footer-container{
+    width: 80%;
+  }
+  
+    /*end of master*/
+    /*index*/
+    /*.product-carousel-item{
+        width: 1.675%;
+        height: auto;
+    }
+    .product-carousel-item .caption{
+    }*/
+    /*end of index*/
+
+}
+
+
+
+
+@media screen and (max-width: 1415px) {
+    /*master*/
+
+    #index-container{
+        width: 75%;
+    }
+    #myTopnav{
+        width: 85%;
+    }
+    .container-custom{
+         width: 87%;
+    }
+   
+    /*end of master*/
+
+}
+@media screen and (max-width: 1227px) {
+    /*master*/
+
+    #index-container{
+        width: 85%;
+    }
+     #myTopnav{
+        width: 93%;
+    }
+    .container-custom{
+        width: 95%;
+    }
+    /*end of master*/
+
+}
+@media screen and (max-width: 1100px) {
+    /*master*/
+
+    #index-container{
+        width: 100%;
+    }
+     #myTopnav{
+        width: 100%;
+    }
+    .container-custom{
+         width: 100%;
+    }
+    
+    /*end of master*/
+    /*distributor*/
+    .distributors{
+        font-size: 13px;
+    }
+    /*end of distributor*/
+
+}
+
+@media screen and (max-width: 922px) {
+    /*master*/
+
+    #search-input-index{
+        width: 85%;
+    }
+     #footer-container{
+        width: 95%;
+     }
+    /*end of master*/
+
+    
+
+}
+@media screen and (max-width: 817px) {
+    /*distributor*/
+    .distributors{
+        font-size: 10px;
+    }
+    /*end of distributor*/
+}
+@media screen and (min-width: 768px) {
+    /*master*/
+
+    .footer-detail{
+        display: block;
+    }
+
+    
+    /*end of master*/
+
+}
+@media screen and (max-width: 767px) {
+    /*master*/
+
+    #search-bar-index{
+       margin-bottom: 20px;
+    }
+     #search-input-index{
+        width: 300px;
+    }
+    .footer-brand{
+        text-align: center;
+    }
+    .footer-menu{
+        text-align: center;
+        padding: 10px 0;
+
+    }
+    .footer-detail{
+        display: none;
+        text-align: left;
+    }
+    .footer-detail ul{
+        padding-left: 0px;
+    }
+    footer{
+        min-height: 250px;
+    }
+    .footer-menu:hover{
+        background-color: #a8131d;
+        cursor: pointer;
+
+    }
+    #footer-container{
+        width: 100%;
+     }
+
+
+    /*end of master*/
+
+    /*index*/
+   /* .product-carousel-item{
+        width: 3.06%;
+        height: auto;
+     }
+     .product-carousel-item .caption {
+    }*/
+    
+    #subscribe-holder{
+        float: none;
+        margin-top: 10px;
+        text-align: center;
+    }
+     /*end of index*/
+    /*product page*/
+    .products-desc{
+        text-align: center;
+    }
+    /*end of product*/
+    /*distributors*/
+    .offset-sm-1{
+        margin-left: 0px;
+    }
+    .col-md-2,.col-sm-2,.col-xs-2{
+        width: 100%;
+        padding-left: 10%;
+        flex: 0 1 auto;
+        max-width: 100%;
+    }
+    /*end of distributors   */
+}
+
+@media screen and (max-width: 465px) {
+    /*master*/
+    #messageForm{
+        width: 300px;
+    }
+    .form-msg input{
+    width: 70%;
+    }
+    .form-msg textarea{
+        width: 70%;
+
+    }
+   
+    
+    /*end of master*/
+
+}
+@media screen and (max-width: 366px) {
+    /*master*/
+
+     #search-input-index{
+        width: 70%;
+    }
+     #messageForm{
+        width: 200px;
+    }
+    .form-msg input{
+        width: 40%;
+    }
+    .form-msg textarea{
+        width: 40%;
+
+    }
+   
+    
+    /*end of master*/
+
+}
+@media screen and (max-width: 148px) {
+    /*master*/
+
+     #search-input-index{
+        width: 50%;
+    }
+    /*end of master*/
+
+}
+
+
